@@ -64,3 +64,73 @@ body, html {
     margin-right: auto;
     width: 300px;
   }
+
+  /* Split the screen in half */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+@font-face {
+  font-family: "Jetbrains";
+  src: url('JetBrainsMono-Medium.woff2') format('woff2'); 
+  src: url('JetBrainsMono-Medium.ttf') format('truetype');
+}  
+.fancy{
+  font-family: 'Jetbrains', 'Times New Roman', Times, serif;
+}
+#kotlin{
+  color: slateblue;
+}
+
+/* Control the left side */
+.cover {
+  left: 0;
+  background-color: #111;
+}
+
+/* Control the right side */
+.cont {
+  right: 0;
+  background-color: white;
+  color: black;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* Download buttons  */
+.web {
+  background-color: #006d5b;
+  color: white;
+  border-radius: 8px;
+}
+.pdf{
+  background-color: firebrick;
+  color: white;
+  border-radius: 8px;
+}
+.book{
+  background-color: brown;
+  color: white;
+  border-radius: 8px;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 32px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
