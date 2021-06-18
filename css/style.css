@@ -80,11 +80,17 @@ body, html {
   src: url('JetBrainsMono-Medium.woff2') format('woff2'); 
   src: url('JetBrainsMono-Medium.ttf') format('truetype');
 }  
-.fancy{
-  font-family: 'Jetbrains', 'Times New Roman', Times, serif;
+.fancy, h6, h5{
+  font-family: "Inconsolata", sans-serif;
 }
 #kotlin{
   color: slateblue;
+}
+#cpp{
+  color: royalblue;
+}
+#git{
+  color: forestgreen;
 }
 
 /* Control the left side */
@@ -124,13 +130,48 @@ body, html {
   color: white;
   border-radius: 8px;
 }
-a {
+.a {
   text-decoration: none;
   display: inline-block;
   padding: 16px 32px;
 }
 
-a:hover {
+.a:hover {
   background-color: #ddd;
   color: black;
 }
+
+/* Split page into 4 */
+.top_left {
+  left: 0;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+}
+.top_right{
+  right: 0; 
+  top: 0;
+  background-color: #fff;
+  color: black;
+}
+.bottom_left{
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  color: black;
+}
+.bottom_right{
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  color: #fff;
+}
+  /* Split the screen in half */
+  .quarter {
+    height: 50%;
+    width: 50%;
+    position: fixed;
+    z-index: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
