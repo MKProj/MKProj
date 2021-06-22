@@ -76,9 +76,93 @@
     </div>
   </div>
 </div>
+
+
+
+<div class="w3-container">
+    <div class="w3-content" style="max-width: 600px;">
+      <div>
+        <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">The Language Integration List</span></h5>
+        <p>Here's a list of programming languages that are either present or planned to be integrated into future projects:</p>
+      </div>
+    </div>
+</div>
+<div class="w3-center w3-padding-32">
+<div class="w3-bar w3-black" style="max-width: 600px;">
+  <button class="w3-bar-item w3-button tablink w3-purple " onclick="openLang(event, 'HTML')">HTML/MD</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'LaTEX')">LaTEX</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Rust')">Rust</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'C++')">C++</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Dart')">Dart</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Python')">Python</button>
+</div>
+</div>
+ 
+<div class="w3-content" style="max-width: 700px;">
+<div id="HTML" class="w3-panel w3-leftbar w3-topbar w3-light-grey lang">
+  <p> <i>The usage of HTML is to build static, responsive web applications and it's 
+    mainly focused on the development of MKProj.com. MarkDown is mainly used to build 
+    the MKProject Books, and creates an easy development path to build web-books that are
+    generated into HTML pages.</i>
+  </p>
+  <p><b>Knowledge is recommended for contributions</b></p>
+</div>
+<div class="w3-panel w3-leftbar w3-topbar w3-light-grey lang" id="LaTEX" style="display: none;">
+  <p><i>
+    LaTEX is used to build attractive, professional documents and is found in MKProject Books,
+    and will be used for any future manuals/documentations. 
+  </i></p>
+  <p><b>Knowledge is recommneded for contributions</b></p>
+</div>
+<div class="w3-panel w3-leftbar w3-topbar w3-light-grey lang" id="Rust" style="display: none;">
+  <p><i>
+    Rust is the preferred language of development for developing applications such as Web, 
+    Command Line, etc. Rust also provides tools that are actively used, such as MDBook: which 
+    generates the web-books for MKProject-Books.  
+  </i></p>
+  <p><b>Knowledge is recommended for contributions </b></p>
+</div>
+<div class="w3-panel w3-leftbar w3-topbar w3-light-grey lang" id="C++" style="display: none;">
+  <p><i>
+    C++ is the 'beta' language sort of speak, which means something is first written in C++ before 
+    being reprodcued in Rust or Golang. However C++ is planned to take on a larger role for desktop 
+    application development and low-level applications development. 
+  </i></p>
+</div>
+<div class="w3-panel w3-leftbar w3-topbar w3-light-grey lang" id="Dart" style="display: none;">
+  <p><i>
+    Dart & Flutter, it's cross-platform application framework is the perfect choice for development
+    and will be the preferred choice for future mobile/desktop applications. 
+  </i></p>
+</div>
+<div class="w3-panel w3-leftbar w3-topbar w3-light-grey lang" id="Python" style="display: none;">
+  <p><i>
+    Python is currently used as a release packager, and is mainly being used as the middle 
+    man between the projects. Due to my preference of statically typed, compiled lanaguages. 
+    Python hasn't seen much of a role, however I expect it to be used more for future applications. 
+  </i></p>
+</div>
+</div>
+<script>
+function openLang(evt, name) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("lang");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
+  }
+  document.getElementById(name).style.display = "block";
+  evt.currentTarget.className += " w3-purple";
+}
+</script>
+
+
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32 w3-large">
-  <p>MKProjects 2021</a></p>
+<footer class="w3-center w3-light-grey w3-padding w3-large">
+  <p><a href="http://github.com/MKProj/">MKProjects 2021</a></p>
 </footer>
 </body>
 </html>
