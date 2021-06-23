@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<title>MKProjects | Book Plans</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<link  rel="stylesheet" href="../css/style.css"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+<link rel="manifest" href="../images/site.webmanifest">
+<link rel="mask-icon" href="../images/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<body class="w3-sand w3-grey-scale">
+
+<!-- Links (sit on top) -->
+<div  class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="../index.html" class="w3-button w3-block w3-black">Home</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="../projects.html" class="w3-button w3-block w3-black">Projects</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="http://doc.mkproj.com/book/" class="w3-button w3-block w3-black">Contribution Doc</a>
+    </div>
+    <div id="dropdown" class="w3-col s3">
+      <button id="dropbtn" class="w3-button w3-block w3-black">
+        Books
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div id="dropdown-content">
+        <a href="../Basics/index.html">Basics Series</a>
+        <a href="index.html">More Series [Coming Soon]</a>
+        <a href="">Let's Learn Series [Coming Soon]</a>
+        <a href="../plan.html">Plans</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-purple">Basic Series</span></h5>
+
+<div class="w3-center">
+    <div class="w3-bar w3-black" style="max-width: 750px;">
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'C')">C</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'C#')">C#</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Dart')">Dart</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Go')">Go</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Java')">Java</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'JS')">JS</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Ruby')">Ruby</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Rust')">Rust</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'SQL')">SQL</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Swift')">Swift</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Exit')">Exit <i class="fa fa-close"></i></button>
+    </div>
+</div>
+<!-- C Basics Plan-->
+<div class="w3-content w3-padding lang" style="max-width: 750px; display: none;" id="C">
+    <table class="w3-table-all">
+        <tr>
+            <th><b>Sections</b></th>
+            <th><b>Topics</b></th>
+            <th><b>Status</b></th>
+        </tr>
+        <tr>
+           <td>Getting Started</td> 
+           <td>
+               <ul>
+                   <li>What is C?</li>
+                   <li>When/Why was C developed?</li>
+                   <li>How to install Clang & G++</li>
+               </ul>
+           </td>
+           <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Introduction</td>
+            <td>
+                <ul>
+                    <li>Program Structure</li>
+                    <li>Hello World! program</li>
+                    <li>Compiling and run</li>
+                </ul>
+            </td>
+            <td>Complete</td>
+        </tr>
+        <tr>
+            <td>Data Types & Variables</td>
+            <td>
+                <ul>
+                    <li>Integers</li>
+                    <li>Floats</li>
+                    <li>Boolean</li>
+                    <li>Characters</li>
+                    <li>Declaring/Initiliazing Variables</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Arrays</td>
+            <td>
+                <ul>
+                    <li>How to declare an array</li>
+                    <li>Indexes</li>
+                    <li>Accessing members in an array</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Functions</td>
+            <td>
+                <ul>
+                    <li>Declaring a function</li>
+                    <li>Return values</li>
+                    <li>Parameters</li>
+                    <li>Header files</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Control Flow & Loops</td>
+            <td>
+                <ul>
+                    <li>If statements</li>
+                    <li>Else clause</li>
+                    <li>Else if statement</li>
+                    <li>Switch statement</li>
+                    <li>While loops</li>
+                    <li>For loops</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Structs & Enums</td>
+            <td>
+                <ul>
+                    <li>Using structurized data</li>
+                    <li>Enumerating custom types</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Pointers & References</td>
+            <td>
+                <ul>
+                    <li>Memory addresses</li>
+                    <li>Pointers</li>
+                    <li>References</li>
+                    <li>Passing by References</li>
+                    <li>const Reference</li>
+                    <li>Dereferencing</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>File Handling</td>
+            <td>
+                <ul>
+                    <li>Reading a file</li>
+                    <li>Writing a file</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+    </table>
+</div>
+<!-- C# Basics-->
+<div class="w3-content w3-padding lang" style="max-width: 750px; display: none;" id="C#">
+    <table class="w3-table-all">
+        <tr>
+            <th><b>Sections</b></th>
+            <th><b>Topics</b></th>
+            <th><b>Status</b></th>
+        </tr>
+        <tr>
+            <td>Getting Started</td>
+            <td>
+                <ul>
+                    <li>What's C# </li>
+                    <li>What's .NET</li>
+                    <li>Installing  mono</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Introduction</td>
+            <td>
+                <ul>
+                    <li>I/O with Console</li>
+                    <li>Comments</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Data Types & Variables</td>
+            <td>
+                <ul>
+                    <li>Data Types</li>
+                    <li>Variables</li>
+                    <li>Arithmetic Operators</li>
+                    <li>String Builtin Methods</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Logic & Conditionals</td>
+            <td>
+                <ul>
+                    <li>Logical Operators</li>
+                    <li>Comparison Operators</li>
+                    <li>If Statement</li>
+                    <li>Else Clause</li>
+                    <li>Else if Statement</li>
+                    <li>Ternary Operator</li>
+                    <li>Switch Statement</li>
+                    <li>The Break Keyword</li>
+                </ul> 
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Methods</td>
+            <td>
+                <ul>
+                    <li>Method Declaration</li>
+                    <li>Return Values</li>
+                    <li>Void Return Type</li>
+                    <li>Optional Parameters</li>
+                    <li>Out Parameters</li>
+                    <li>Variables Inside Methods</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Arrays & Loops</td>
+            <td>
+                <ul>
+                    <li>Declaring & Initiliazing Arrays</li>Arrays Elements(include Array Length)</li>For Loops</li>
+                    <li>For Each Loops</li>
+                    <li>While Loops</li>
+                    <li>While Do Loops</li>
+                    <li>Infinite Loops</li>
+                    <li>Jump Statements</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Classes & Objects</td>
+            <td>
+                <ul>
+                    <li>What a Class is</li>
+                    <li>Members(include dot Notation)</li>
+                    <li>Fields/Access Control</li>
+                    <li>Constructor(include Parameterless)</li>
+                    <li>this Keyword</li>
+                    <li>Class Property(include auto-implemented)</li>
+                    <li>Static(Constructor/Class)</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Interfaces & Inheritance</td>
+            <td>
+                <ul>
+                    <li>Interface</li>
+                    <li>Inheritance</li>
+                    <li>protected Keyword</li>
+                    <li>override/virtual Keywords</li>
+                    <li>abstract Keyword</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>References</td>
+            <td>
+                <ul>
+                    <li>References Types</li>
+                    <li>Object Reference(include Reference Functionality)</li>
+                    <li>Polphormism</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+    </table>
+</div>
+
+
+<!--More Series-->
+<h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-red">More Series</span></h5>
+
+<div class="w3-center">
+    <div class="w3-bar w3-black" style="max-width: 750px;">
+        <button class="w3-bar-item w3-button Mtablink" onclick="openMore(event, 'MC++')">C++</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openMore(event, 'MC#')">C#</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openMore(event, 'MGo')">Go</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openMore(event, 'MJava')">Java</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openMore(event, 'MPython3')">Python3</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openMore(event, 'MRust')">Rust</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openMore(event, 'MExit')">Exit <i class="fa fa-close"></i></button>
+    </div>
+</div>
+
+<!--More C++-->
+<div class="w3-content w3-padding Mlang" style="max-width: 750px; display: none;" id="MC++">
+    <table class="w3-table-all">
+        <tr>
+            <th>Section</th>
+            <th>Topic</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <ul>
+                    <li></li>
+                </ul>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+
+<script>
+    function openLang(evt, name) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("lang");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-purple", "");
+      }
+      document.getElementById(name).style.display = "block";
+      evt.currentTarget.className += " w3-purple";
+    }
+    function openMore(evt, name) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("Mlang");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("Mtablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+      }
+      document.getElementById(name).style.display = "block";
+      evt.currentTarget.className += " w3-red";
+    }
+      
+</script>
+</body>
+</html>

@@ -28,7 +28,7 @@
       <a href="projects.html" class="w3-button w3-block w3-black">Projects</a>
     </div>
     <div class="w3-col s3">
-      <a href="https://doc.mkproj.com/book/" class="w3-button w3-block w3-black">Contribution Doc</a>
+      <a href="http://doc.mkproj.com/book/" class="w3-button w3-block w3-black">Contribution Doc</a>
     </div>
     <div id="dropdown" class="w3-col s3">
       <button id="dropbtn" class="w3-button w3-block w3-black">
@@ -39,6 +39,7 @@
         <a href="Book/Basics/index.html">Basics Series</a>
         <a href="Book/More/index.html">More Series [Coming Soon]</a>
         <a href="">Let's Learn Series [Coming Soon]</a>
+        <a href="Book/plan.html">Plans</a>
       </div>
     </div>
   </div>
@@ -80,7 +81,7 @@
 
 
 <div class="w3-container">
-    <div class="w3-content" style="max-width: 600px;">
+    <div class="w3-content" style="max-width: 700px;">
       <div>
         <h5 class="w3-center w3-padding-32"><span class="w3-tag w3-wide">The Language Integration List</span></h5>
         <p>Here's a list of programming languages that are either present or planned to be integrated into future projects:</p>
@@ -88,18 +89,19 @@
     </div>
 </div>
 <div class="w3-center w3-padding-32">
-<div class="w3-bar w3-black" style="max-width: 600px;">
-  <button class="w3-bar-item w3-button tablink w3-purple " onclick="openLang(event, 'HTML')">HTML/MD</button>
+<div class="w3-bar w3-black" style="max-width: 700px;">
+  <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'HTML')">HTML/MD</button>
   <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'LaTEX')">LaTEX</button>
   <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Rust')">Rust</button>
   <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'C++')">C++</button>
   <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Dart')">Dart</button>
   <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Python')">Python</button>
+  <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Exit')">Exit <i class="fa fa-close"></i></button>
 </div>
 </div>
  
 <div class="w3-content" style="max-width: 700px;">
-<div id="HTML" class="w3-panel w3-leftbar w3-topbar w3-light-grey lang">
+<div id="HTML" class="w3-panel w3-leftbar w3-topbar w3-light-grey lang" style="display: none;">
   <p> <i>The usage of HTML is to build static, responsive web applications and it's 
     mainly focused on the development of MKProj.com. MarkDown is mainly used to build 
     the MKProject Books, and creates an easy development path to build web-books that are
