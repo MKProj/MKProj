@@ -175,3 +175,20 @@ body, html {
     overflow-x: hidden;
     padding-top: 20px;
   }
+  #news{
+    color: blue;
+  }
+  #news-bar{
+    top:0;
+    right:0; 
+    width:25%;
+    height: 55%;
+    position: fixed;
+  }
+  .time{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .vl {
+    border-left: 2px solid black;
+    height: 500px;
+  }

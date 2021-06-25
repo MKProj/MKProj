@@ -27,7 +27,7 @@
       <a href="../projects.html" class="w3-button w3-block w3-black">Projects</a>
     </div>
     <div class="w3-col s3">
-      <a href="http://doc.mkproj.com/book/" class="w3-button w3-block w3-black">Contribution Doc</a>
+      <a href="" class="w3-button w3-block w3-black">MoKa Weekly</a>
     </div>
     <div id="dropdown" class="w3-col s3">
       <button id="dropbtn" class="w3-button w3-block w3-black">
@@ -35,10 +35,10 @@
         <i class="fa fa-caret-down"></i>
       </button>
       <div id="dropdown-content">
-        <a href="../Basics/index.html">Basics Series</a>
-        <a href="index.html">More Series [Coming Soon]</a>
+        <a href="Basics/index.html">Basics Series</a>
+        <a href="More/index.html">More Series [Coming Soon]</a>
         <a href="">Let's Learn Series [Coming Soon]</a>
-        <a href="../plan.html">Plans</a>
+        <a href="plan.html">Plans</a>
       </div>
     </div>
   </div>
@@ -54,9 +54,8 @@
 </p>
 </div>
 
-
+<!--Basic Series-->
 <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-purple">Basic Series</span></h5>
-
 <div class="w3-center">
     <div class="w3-bar w3-black" style="max-width: 750px;">
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'C')">C</button>
@@ -65,6 +64,7 @@
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Go')">Go</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Java')">Java</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'JS')">JS</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'LaTEX')">LaTEX</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Ruby')">Ruby</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Rust')">Rust</button>
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'SQL')">SQL</button>
@@ -72,7 +72,8 @@
         <button class="w3-bar-item w3-button tablink" onclick="openLang(event, 'Exit')">Exit <i class="fa fa-close"></i></button>
     </div>
 </div>
-<!-- C Basics Plan-->
+
+<!-- C Basics-->
 <div class="w3-content w3-padding lang" style="max-width: 750px; display: none;" id="C">
     <table class="w3-table-all">
         <tr>
@@ -188,6 +189,7 @@
         </tr>
     </table>
 </div>
+
 <!-- C# Basics-->
 <div class="w3-content w3-padding lang" style="max-width: 750px; display: none;" id="C#">
     <table class="w3-table-all">
@@ -315,10 +317,167 @@
     </table>
 </div>
 
+<!--Dart Basics -->
+<div class="w3-content w3-padding lang" style="max-width: 750px; display: none;" id="Dart">
+<table class="w3-table-all">
+    <tr>
+        <th>Sections</th>
+        <th>Topics</th>
+        <th>Status</th>
+    </tr>
+    <tr>
+        <td>Getting Started</td>
+        <td>
+            <ul><li>What Dart is(serverside, application dev, flutter)</li>
+                    <li>how to install Dart</li></ul>
+        </td>
+        <td>Incomplete</td>
+    </tr>
+    <tr>
+        <td>Introduction</td>
+        <td>
+            <ul><li>Hello World (print)</li>
+                    <li>Variables</li>
+                    <li>Comments</li>
+                    <li>Importing</li></ul>
+        </td>
+        <td>Incomplete</td>
+    </tr>
+    <tr>
+        <td>Control Flow</td>
+        <td>
+            <ul><li>if statements</li>
+                    <li>else clause</li>
+                    <li>else if statements</li>
+                    <li>for loop</li>
+                    <li>while loop</li></ul>
+        </td>
+        <td>Incomplete</td>
+    </tr>
+    <tr>
+        <td>Functions</td>
+        <td>
+            <ul><li>Declaring functions</li>
+                    <li>Return values & parameters</li>
+                    <li>Shorthand functions</li></ul>
+        </td>
+        <td>Incomplete</td>
+    </tr>
+    <tr>
+        <td>Classes</td>
+        <td>
+            <ul><li>Declaring classes</li>
+                    <li>Class properties & methods</li>
+                    <li>Constructors</li>
+                    <li>Getter and Setter methods</li></ul> 
+        </td>
+        <td>Incomplete</td>
+    </tr>
+    <tr>
+        <td>Libraries</td>
+        <td>
+            <ul><li>Creating & importing your own library</li></ul>
+        </td>
+        <td>Incomplete</td>
+    </tr>
+    <tr>
+        <td>Exceptions</td>
+        <td>
+            <ul><li>Catch & Throw</li>
+                    <li>Creating your own excpetion</li></ul>
+        </td>
+        <td>Incomplete</td>
+    </tr>
+
+</table>
+
+</div> 
+
+<!--LaTEX Basics-->
+<div class="w3-content w3-padding lang" style="max-width: 750px; display: none;" id="LaTEX">
+    <table class="w3-table-all">
+        <tr>
+            <th>Sections</th>
+            <th>Topics</th>
+            <th>Status</th>
+        </tr>
+</table>
+</div>
+<!--Swift Basics-->
+<div class="w3-content w3-padding lang" style="max-width: 750px; display: none;" id="Swift">
+    <table class="w3-table-all">
+        <tr>
+            <th>Sections</th>
+            <th>Topics</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Getting Started</td>
+            <td>
+                <ul>
+                    <li>What is Swift</li>
+                    <li>How to install</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Introduction</td>
+            <td>
+                <ul>
+                    <li>Program structure</li>
+                    <li>Print statement</li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Variables</td>
+            <td>
+                <ul>
+                    <li>What are variables & using the var keyword</li>
+                    <li>Constants</li>
+                    <li>Data Types</li>
+                    <li>Arithmetic Operations</li>
+                    <li>Compound assingment operators</li>
+
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Conditionals & Logic</td>
+            <td>
+                <ul>
+                    <li></li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Loops</td>
+            <td>
+                <ul>
+                    <li></li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+        <tr>
+            <td>Arrays & Sets</td>
+            <td>
+                <ul>
+                    <li></li>
+                </ul>
+            </td>
+            <td>Incomplete</td>
+        </tr>
+    </table>
+</div>
+
 
 <!--More Series-->
 <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-red">More Series</span></h5>
-
 <div class="w3-center">
     <div class="w3-bar w3-black" style="max-width: 750px;">
         <button class="w3-bar-item w3-button Mtablink" onclick="openMore(event, 'MC++')">C++</button>
